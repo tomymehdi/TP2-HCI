@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, tp2Activity!</string>
-    <string name="app_name">Tp-hci2</string>
-    <color name="White">#FFFFFF</color>
-    <color name="Grey">#CDCDCD</color>
-    <color name="Black">#000000</color>
-    <string name="Category">Category</string>
+    <string name="hello">Hello World, TpAndroidActivity!</string>
+    <string name="app_name">TpAndroid</string>
 
 </resources>

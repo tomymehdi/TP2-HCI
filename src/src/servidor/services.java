@@ -6,12 +6,14 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Element;
 
-import principal.Address;
-import principal.App;
-import principal.Category;
-import principal.Item;
-import principal.Order;
-import principal.SubCategory;
+import tpAndroid.main.Address;
+import tpAndroid.main.App;
+import tpAndroid.main.Category;
+import tpAndroid.main.Item;
+import tpAndroid.main.Order;
+import tpAndroid.main.SubCategory;
+
+
 
 
 
@@ -43,6 +45,8 @@ public class services {
 					categories.add(new Category((Element) catnodes.item(i)));
 					
 				}
+				
+				app.setCategories(categories);
 			/*	SwingUtilities.invokeLater(new ObjectAction<List<Category>>(categories) {
 
 					public void run() {
