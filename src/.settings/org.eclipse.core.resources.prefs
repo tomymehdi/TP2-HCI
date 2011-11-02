@@ -1,0 +1,6 @@
+#Tue Nov 01 12:29:34 GMT-03:00 2011
+eclipse.preferences.version=1
+encoding//src/errors/catalogError.java=UTF-8
+encoding//src/errors/commonError.java=UTF-8
+encoding//src/errors/orderError.java=UTF-8
+encoding//src/errors/securityError.java=UTF-8

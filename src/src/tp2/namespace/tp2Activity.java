@@ -9,5 +9,7 @@ public class tp2Activity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        System.out.println("hola hola hola");
     }
 }

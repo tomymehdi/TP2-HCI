@@ -6,5 +6,6 @@
     <color name="White">#FFFFFF</color>
     <color name="Grey">#CDCDCD</color>
     <color name="Black">#000000</color>
+    <string name="Category">Category</string>
 
 </resources>
