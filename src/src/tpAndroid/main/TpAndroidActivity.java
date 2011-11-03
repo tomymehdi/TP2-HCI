@@ -27,21 +27,21 @@ public class TpAndroidActivity extends Activity {
         
 
         app=new App();
-        services=new services(app);
-        try{
-        services.loadCategories();
-        }
-        catch (Exception e) {
-        		System.out.println("error en load");
-        }
-        
-        categories = app.getCategories();
-        
-        if(categories!=null){
-        for(int i=0;i<categories.size();i++){
-        	System.out.println(categories.get(i).toString());
-        }
-        }
+//        services=new services(app);
+//        try{
+//        services.loadCategories();
+//        }
+//        catch (Exception e) {
+//        		System.out.println("error en load");
+//        }
+//        
+//        categories = app.getCategories();
+//        
+//        if(categories!=null){
+//        for(int i=0;i<categories.size();i++){
+//        	System.out.println(categories.get(i).toString());
+//        }
+//        }
         
     }
 }
