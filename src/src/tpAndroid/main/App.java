@@ -12,13 +12,12 @@ public class App {
 	private List<Order> orders;
 	private List<Address> addreses;
 	private List<Category> categories;
-	
 
 	public App() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public  List<Item> getItemsList() {
+	public List<Item> getItemsList() {
 		return itemsList;
 	}
 
@@ -27,16 +26,18 @@ public class App {
 	}
 
 	public void setToken(String token) {
-		this.token=token;
+		this.token = token;
 	}
-	public String getToken(){
+
+	public String getToken() {
 		return token;
 	}
 
 	public void setUsername(String username) {
-		this.username=username;
+		this.username = username;
 	}
-	public String getUsername(){
+
+	public String getUsername() {
 		return username;
 	}
 
@@ -65,11 +66,10 @@ public class App {
 	}
 
 	public void setCategories(List<Category> categories) {
-
-		this.categories=categories;
+		this.categories = categories;
 	}
-	public List<Category>  getCategories()
-	{
+
+	public List<Category> getCategories() {
 		return categories;
 	}
 
