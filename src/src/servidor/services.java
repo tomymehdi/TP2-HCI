@@ -2,9 +2,10 @@ package servidor;
 
 import java.util.LinkedList;
 import java.util.List;
+
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
 import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 
 import tpAndroid.main.Address;
 import tpAndroid.main.App;
