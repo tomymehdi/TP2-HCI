@@ -1,6 +1,8 @@
 package errors;
 
-public class catalogError implements servidor.RequestError{
+import servidor.RequestError;
+
+public class catalogError implements RequestError{
 
 	private int errNum;
 	private String Language;
@@ -11,7 +13,6 @@ public class catalogError implements servidor.RequestError{
 	}
 	
 	
-	@Override
 	public void handle(Exception e) {
 		
 		if(Language=="Spanish"){

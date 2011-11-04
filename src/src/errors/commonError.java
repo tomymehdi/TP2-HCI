@@ -1,6 +1,8 @@
 package errors;
 
-public class commonError implements servidor.RequestError {
+import servidor.RequestError;
+
+public class commonError implements RequestError {
 
 	private int errNum;
 	private String Language;
@@ -11,7 +13,6 @@ public class commonError implements servidor.RequestError {
 	}
 	
 	
-	@Override
 	public void handle(Exception e) {
 		
 		if(Language=="Spanish"){

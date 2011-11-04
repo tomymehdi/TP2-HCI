@@ -1,6 +1,8 @@
 package errors;
 
-public class securityError implements servidor.RequestError{
+import servidor.RequestError;
+
+public class securityError implements RequestError{
 
 	
 		private int errNum;
@@ -12,7 +14,6 @@ public class securityError implements servidor.RequestError{
 		}
 		
 		
-		@Override
 		public void handle(Exception e) {
 			
 			if(Language=="Spanish"){

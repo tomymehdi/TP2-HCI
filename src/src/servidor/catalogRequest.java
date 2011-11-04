@@ -9,7 +9,10 @@ public class catalogRequest extends Request {
 	}
 
 	public catalogRequest(String method, String tosend) {
+		
 		super(COMMON_URL + method, tosend);
+
+		
 	}
 	
 }
