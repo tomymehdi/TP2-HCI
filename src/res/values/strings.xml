@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">ART Mobile</string>
     <string name="loading">Please wait while we load this app...</string>
     <string name="loaded">Application Loaded</string>
     <string name="cartButton">Cart</string>
-    <string name="homeBreadcrumb">Home &gt;</string>
-    <string name="cartBreadcrumb">Home &gt; Cart &gt;</string>
-    <string name="shopBreadcrumb">Home &gt; Shop &gt;</string>
+    <string name="categories">Categories</string>
+    <string name="subcategories">Subcategories</string>
+    <string name="products">Products</string>
+    <string name="my_account">My account</string>
     <string name="list_of_products">List of Products</string>
+    <string name="categories_main_button">Categories</string>
+    <string name="page_main_button">Art page</string>
     <string name="start_shopping">Start Shopping!</string>
+    <string name="my_account_main_button">My Account</string>
+    <string name="hot_products_main_button">Hot products</string>
+    <string name="myAccount_arrivingOrders">Arriving orders</string>
+    <string name="item_title_example">Libro loco</string>
+    <string name="category_example">Libros</string>
+        
 </resources>

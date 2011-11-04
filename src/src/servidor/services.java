@@ -28,25 +28,21 @@ import tpAndroid.main.User;
 
 
 
-
-
-
-public class services {
+public class Services {
 	
 	
 	int langid = 1;
 	App app;
 	
-	public services(App app) {
+	public Services(App app) {
 		this.app=app;
 	}
-
 
 	
 	//CARGA LAS CATEGORIAS CON LAS SUB CATEGORIAS
 	public void loadCategories() {
 		
-		new catalogRequest("GetCategoryList", "language_id=" + langid).make(new RequestResponse() {
+		new CatalogRequest("GetCategoryList", "language_id=" + langid).make(new RequestResponse() {
 			
 		
 			public void handle(String response) {
@@ -119,7 +115,7 @@ public class services {
 	
 	private void loadSubcategories(final int category_id) {
 		
-		new catalogRequest("GetSubcategoryList", "language_id=" + langid + "&category_id=" + category_id).make(new RequestResponse() {
+		new CatalogRequest("GetSubcategoryList", "language_id=" + langid + "&category_id=" + category_id).make(new RequestResponse() {
 			public void handle(String response) {
 			
 				List<SubCategory> subcategories = new LinkedList<SubCategory>();
@@ -210,17 +206,17 @@ public class services {
 
 		if (category_id != 0) {
 			if (subcategory_id == 0) {
-				new catalogRequest("GetProductListByCategory", "language_id=" + langid + "&category_id=" + category_id).make(rcb);
+				new CatalogRequest("GetProductListByCategory", "language_id=" + langid + "&category_id=" + category_id).make(rcb);
 			} else {
-				new catalogRequest("GetProductListBySubcategory", "language_id=" + langid + "&category_id=" + category_id + "&subcategory_id=" + subcategory_id).make(rcb);
+				new CatalogRequest("GetProductListBySubcategory", "language_id=" + langid + "&category_id=" + category_id + "&subcategory_id=" + subcategory_id).make(rcb);
 			}
 		}
 	}
 
 
-	protected void loadInfo(final int id, String response) {
+	private void loadInfo(final int id, String response) {
 		
-		new catalogRequest("GetProduct", "product_id=" + id).make(new RequestResponse() {
+		new CatalogRequest("GetProduct", "product_id=" + id).make(new RequestResponse() {
 			
 			Item item=null;
 			
@@ -248,7 +244,6 @@ public class services {
 		
 			});
 			}
-	
 	
 	private void parseMovieInfo(String response, Item item){
 		
@@ -434,8 +429,9 @@ public class services {
 		 return ans;
 	}
 		
+	
 	public void loadSearchResults(String query) {
-		new catalogRequest("GetProductListByName", "criteria=" + query).make(new RequestResponse() {
+		new CatalogRequest("GetProductListByName", "criteria=" + query).make(new RequestResponse() {
 			public void handle(String response) {
 			
 						
@@ -450,15 +446,11 @@ public class services {
 			
 		});
 	}
-	
-	
-	
-	
-	
+		
 	
 	public void signIn(String userName, String pass){
 		
-		new securityRequest("SignIn", "username="+userName+"&password="+pass).make(new RequestResponse() {
+		new SecurityRequest("SignIn", "username="+userName+"&password="+pass).make(new RequestResponse() {
 			
 			public void handle(String response) {
 				
@@ -517,7 +509,7 @@ public class services {
 	
 	public void signOut(String uname, String token){
 		
-		new securityRequest("SignOut", "username="+uname+"&authentication_token="+token).make(new RequestResponse() {
+		new SecurityRequest("SignOut", "username="+uname+"&authentication_token="+token).make(new RequestResponse() {
 			
 			public void handle(String response) {
 			
@@ -526,13 +518,11 @@ public class services {
 			}
 		});
 	}
-
-	
 	
 	
 	public void loadOrders(String uname, String token){
 		
-		new orderRequest("GetOrderList", "username="+uname+"&authentication_token="+token).make(new RequestResponse() {
+		new OrderRequest("GetOrderList", "username="+uname+"&authentication_token="+token).make(new RequestResponse() {
 
 			public void handle(String response) {
 
@@ -625,7 +615,7 @@ public class services {
 	private void getAddress(int id,final Order order) {
 		
 		
-		new orderRequest("GetAddress", "username="+app.getUser().getUserName()+"&authentication_token="+app.getToken()+"&address_id="+id).make(new RequestResponse() {
+		new OrderRequest("GetAddress", "username="+app.getUser().getUserName()+"&authentication_token="+app.getToken()+"&address_id="+id).make(new RequestResponse() {
 
 
 			

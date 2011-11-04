@@ -1,7 +1,5 @@
 package com.ar.art;
 
-import servidor.services;
-import tpAndroid.main.App;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,16 +37,13 @@ public class ArtIntroActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.intro);
-        Message message = new Message();
-        message.what=STOP;
-        splashHandler.sendMessageDelayed(message, MILLIS_TIME_TO_WAIT);
+      //  setContentView(R.layout.mainview);
         
         
         //VOY AGREGANDO LO MIO
         
-        App app=new App();
-        services serv=new services(app); 
+      //  App app=new App();
+     //   services serv=new services(app); 
         
      //  serv.loadCategories();
        
