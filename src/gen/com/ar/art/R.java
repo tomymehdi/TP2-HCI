@@ -23,28 +23,29 @@ public final class R {
         public static final int main_button=0x7f020005;
     }
     public static final class id {
-        public static final int View01=0x7f06000d;
-        public static final int categories_button=0x7f060009;
-        public static final int category_button=0x7f060001;
-        public static final int hot_products_button=0x7f06000b;
-        public static final int imageButton1=0x7f06000e;
+        public static final int View01=0x7f06000c;
+        public static final int categories_button=0x7f060008;
+        public static final int hot_products=0x7f06000f;
+        public static final int hot_products_button=0x7f06000a;
+        public static final int imageButton1=0x7f06000d;
         public static final int imageView1=0x7f060000;
-        public static final int imageView2=0x7f060002;
-        public static final int my_account_button=0x7f06000a;
-        public static final int page_button=0x7f06000c;
-        public static final int textView1=0x7f060003;
-        public static final int textView2=0x7f060004;
-        public static final int textView3=0x7f060005;
-        public static final int textView4=0x7f060006;
-        public static final int textView5=0x7f060007;
-        public static final int textView6=0x7f060008;
+        public static final int imageView2=0x7f060001;
+        public static final int myAccount=0x7f06000e;
+        public static final int my_account_button=0x7f060009;
+        public static final int page_button=0x7f06000b;
+        public static final int textView1=0x7f060002;
+        public static final int textView2=0x7f060003;
+        public static final int textView3=0x7f060004;
+        public static final int textView4=0x7f060005;
+        public static final int textView5=0x7f060006;
+        public static final int textView6=0x7f060007;
     }
     public static final class layout {
-        public static final int categoriesview=0x7f030000;
-        public static final int itemdescriptionview=0x7f030001;
-        public static final int mainview=0x7f030002;
-        public static final int myaccountview=0x7f030003;
-        public static final int productsview=0x7f030004;
+        public static final int itemdescriptionview=0x7f030000;
+        public static final int mainview=0x7f030001;
+        public static final int myaccountview=0x7f030002;
+        public static final int productsview=0x7f030003;
+        public static final int subcategoriesview=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f050000;

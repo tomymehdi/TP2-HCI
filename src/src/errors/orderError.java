@@ -1,13 +1,13 @@
 package errors;
 
-import servidor.RequestError;
 
-public class orderError  implements RequestError{
+
+public class OrderError  implements RequestError{
 
 	private int errNum;
 	private String Language=null;
 	
-	public orderError(int errNum, String Language) {
+	public OrderError(int errNum, String Language) {
 		
 		this.errNum=errNum;
 		this.Language=Language;

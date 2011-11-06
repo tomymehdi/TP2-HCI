@@ -1,13 +1,13 @@
 package errors;
 
-import servidor.RequestError;
 
-public class commonError implements RequestError {
+
+public class CommonError implements RequestError {
 
 	private int errNum;
 	private String Language;
 	
-	public commonError(int errNum, String Language) {
+	public CommonError(int errNum, String Language) {
 		this.errNum=errNum;
 		this.Language=Language;
 	}

@@ -1,7 +1,5 @@
 package com.ar.art;
 
-import servidor.Services;
-import tpAndroid.main.App;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,8 +15,6 @@ public class MainActivity extends ArtActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		T.appvariabls.app = new App();
-		T.appvariabls.services = new Services(T.appvariabls.app);
 		setContentView(R.layout.mainview);
 		initialize();
 	}

@@ -22,10 +22,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:label="@string/categories"
-            android:name=".CategoriesActivity" >
-        </activity>
-        <activity
             android:label="@string/subcategories"
             android:name=".SubcategoriesActivity" >
         </activity>

@@ -1,14 +1,14 @@
 package errors;
 
-import servidor.RequestError;
 
-public class securityError implements RequestError{
+
+public class SecurityError implements RequestError{
 
 	
 		private int errNum;
 		private String Language;
 		
-		public securityError(int errNum, String Language) {
+		public SecurityError(int errNum, String Language) {
 			this.errNum=errNum;
 			this.Language=Language;
 		}

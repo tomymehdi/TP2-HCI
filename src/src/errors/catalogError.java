@@ -1,13 +1,13 @@
 package errors;
 
-import servidor.RequestError;
 
-public class catalogError implements RequestError{
+
+public class CatalogError implements RequestError{
 
 	private int errNum;
 	private String Language;
 	
-	public catalogError(int errNum, String Language) {
+	public CatalogError(int errNum, String Language) {
 		this.errNum=errNum;
 		this.Language=Language;
 	}
