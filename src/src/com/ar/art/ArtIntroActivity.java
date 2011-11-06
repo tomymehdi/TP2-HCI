@@ -37,9 +37,28 @@ public class ArtIntroActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.intro);
-        Message message = new Message();
-        message.what=STOP;
-        splashHandler.sendMessageDelayed(message, MILLIS_TIME_TO_WAIT);
+      //  setContentView(R.layout.mainview);
+        
+        
+        //VOY AGREGANDO LO MIO
+        
+      //  App app=new App();
+     //   services serv=new services(app); 
+        
+     //  serv.loadCategories();
+       
+     //  serv.loadItems(2, 0);
+        
+     //   serv.signIn("valuts", "tomas123");
+              
+       
+       
+      // serv.loadOrders("valuts", app.getUser().getToken());
+   
+       
+      
+
+        
+        
     }
 }

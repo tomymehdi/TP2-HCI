@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="60px"
-        android:layout_height="60px"
+        android:layout_width="50px"
+        android:layout_height="50px"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:src="@drawable/lupa" />
@@ -26,7 +26,7 @@
         android:textSize="24dp" />
 
     <Button
-        android:id="@+id/myAccount"
+        android:id="@+id/my_account_button"
         android:layout_width="200px"
         android:layout_height="170px"
         android:layout_alignLeft="@+id/categories_button"
@@ -37,7 +37,7 @@
         android:textSize="24dp" />
 
     <Button
-        android:id="@+id/hot_products"
+        android:id="@+id/hot_products_button"
         android:layout_width="200px"
         android:layout_height="170px"
         android:layout_alignParentRight="true"
@@ -51,8 +51,8 @@
         android:id="@+id/page_button"
         android:layout_width="200px"
         android:layout_height="170px"
-        android:layout_alignLeft="@+id/hot_products"
-        android:layout_alignTop="@+id/myAccount"
+        android:layout_alignLeft="@+id/hot_products_button"
+        android:layout_alignTop="@+id/my_account_button"
         android:background="@drawable/main_button"
         android:text="@string/page_main_button"
         android:textSize="24dp" />
