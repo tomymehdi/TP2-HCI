@@ -65,11 +65,10 @@ public class CategoriesActivity extends Activity {
 		lupa.setLayoutParams(new Gallery.LayoutParams(LayoutParams.WRAP_CONTENT,
 				  LayoutParams.WRAP_CONTENT));
 		RelativeLayout rl = new RelativeLayout(this);
-		setContentView(sv);
 		System.out.println(("1"));
-		rl.addView(sv);
-		System.out.println("2");
 		rl.addView(lupa);
+		System.out.println("2");
+		rl.addView(sv);
 		System.out.println("3");
 		setContentView(rl);
 	}
