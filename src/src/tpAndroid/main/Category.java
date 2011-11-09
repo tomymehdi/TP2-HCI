@@ -34,5 +34,9 @@ public class Category {
 	public List<SubCategory> getSubCategories(){
 		return subCategories;
 	}
+	
+	public String getName() {
+		return name;
+	}
 
 }

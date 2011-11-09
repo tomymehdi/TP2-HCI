@@ -13,42 +13,23 @@
         android:layout_alignParentTop="true"
         android:src="@drawable/lupa" />
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <!-- Vista cuando haya elementos en la lista -->
+
+    <ListView
+        android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="60px" >
+        android:layout_marginTop="200px"
+        android:divider="@null"
+        android:dividerHeight="50px"
+        android:drawSelectorOnTop="false" />
 
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="125px" >
+    <!-- Vista se va a mostrar cuando la lista esté vacía -->
 
-            <Button
-                android:id="@+id/category_button"
-                android:layout_width="350px"
-                android:layout_height="100px"
-                android:layout_marginLeft="30px"
-                android:background="@drawable/main_button"
-                android:text="@string/category_example"
-                android:textSize="24dp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="125px"
-            android:layout_marginTop="125px" >
-
-            <Button
-                android:id="@+id/category_button"
-                android:layout_width="350px"
-                android:layout_height="100px"
-                android:layout_marginLeft="30px"
-                android:background="@drawable/main_button"
-                android:text="@string/category_example"
-                android:textSize="24dp" />
-        </RelativeLayout>
-    </RelativeLayout>
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/no_data" />
 
 </RelativeLayout>

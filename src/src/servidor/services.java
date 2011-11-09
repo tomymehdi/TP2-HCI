@@ -3,8 +3,10 @@ package servidor;
 import java.io.StringReader;
 import java.sql.Date;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -54,10 +56,10 @@ public class Services {
 								
 				app.setCategories(categories);
 				
-				for(int i=0;i<categories.size();i++){
-					
-				      loadSubcategories(categories.get(i).getId());
-				}
+//				for(int i=0;i<categories.size();i++){
+//					
+//				      loadSubcategories(categories.get(i).getId());
+//				}
 		
 				
 			}
@@ -678,6 +680,26 @@ public class Services {
 		
 		});
 	
+	}
+
+
+	public List<? extends Map<String, ?>> getCategoriesAsMap() {
+		String[] categoryFields = { "name" };
+		loadCategories();
+		List<Category> categories = app.getCategories();
+		List<Map<String, String>> transformedTweets = new ArrayList<Map<String, String>>();
+		for (Category c : categories) {
+			HashMap<String, String> map = new HashMap<String, String>();
+			map.put(categoryFields[0], c.getName());
+			transformedTweets.add(map);
+		}
+		return transformedTweets;
+	}
+
+
+	public String[] getCategoriesAsMapKeys() {
+		String[] categoryFields = { "name" };
+		return categoryFields;
 	}
 		
 	

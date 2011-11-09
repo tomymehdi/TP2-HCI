@@ -41,10 +41,11 @@ public final class R {
     }
     public static final class layout {
         public static final int categoriesview=0x7f030000;
-        public static final int itemdescriptionview=0x7f030001;
-        public static final int mainview=0x7f030002;
-        public static final int myaccountview=0x7f030003;
-        public static final int productsview=0x7f030004;
+        public static final int category=0x7f030001;
+        public static final int itemdescriptionview=0x7f030002;
+        public static final int mainview=0x7f030003;
+        public static final int myaccountview=0x7f030004;
+        public static final int productsview=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
@@ -60,6 +61,7 @@ public final class R {
         public static final int myAccount_arrivingOrders=0x7f05000e;
         public static final int my_account=0x7f050007;
         public static final int my_account_main_button=0x7f05000c;
+        public static final int no_data=0x7f050011;
         public static final int page_main_button=0x7f05000a;
         public static final int products=0x7f050006;
         public static final int start_shopping=0x7f05000b;
