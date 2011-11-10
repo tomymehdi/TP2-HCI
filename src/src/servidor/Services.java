@@ -432,7 +432,7 @@ public class Services {
 
 				items=parseItems(response);
 								
-				app.setSearch(items);
+				app.setItems(items);
 				
 			}
 

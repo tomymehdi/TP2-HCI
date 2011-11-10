@@ -2,6 +2,7 @@ package com.ar.art;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -30,10 +31,12 @@ public class MainActivity extends ArtActivity {
 		OnClickListener c=new LupaListener();
 		iv.setOnClickListener(c);
 				
-
+		
 		
 	}
+	
 
+	
 	private class LupaListener implements OnClickListener{
 
 		@Override
@@ -46,6 +49,7 @@ public class MainActivity extends ArtActivity {
 	}
 
 	private void initialize() {
+			
 		categoriesButton = (Button) findViewById(R.id.categories_button);
 		
 		
@@ -80,4 +84,16 @@ public class MainActivity extends ArtActivity {
 		});
 	}
 
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event){
+		if(keyCode == KeyEvent.KEYCODE_SEARCH && event.getRepeatCount() == 0){
+			Intent intent = new Intent(MainActivity.this,
+					OpenSearchActivity.class);
+			startActivity(intent);			
+			
+			
+		}
+		return true;
+		}
+	
 }

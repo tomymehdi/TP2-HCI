@@ -1,4 +1,5 @@
 <resources>
     <color name="bgColor">#AADDFF</color>
     <color name="textColor">#000000</color>
+    <string name="black">#FFFFFF</string>
 </resources>

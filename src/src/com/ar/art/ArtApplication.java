@@ -1,6 +1,8 @@
 package com.ar.art;
 
 import android.app.Application;
+import android.content.Intent;
+import android.view.KeyEvent;
 import servidor.Services;
 import tpAndroid.main.App;
 
@@ -31,5 +33,7 @@ public class ArtApplication extends Application {
 	public void setApp(App app) {
 		this.app = app;
 	}
+	
+
 
 }

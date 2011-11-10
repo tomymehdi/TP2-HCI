@@ -22,7 +22,6 @@ public class ItemsAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		System.out.println(items.size());
 		return items.size();
 	}
 

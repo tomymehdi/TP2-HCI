@@ -7,6 +7,7 @@ public class OpenSearchActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
 		onSearchRequested();
 	}
@@ -16,6 +17,7 @@ public class OpenSearchActivity extends Activity {
 		// appData.putBoolean(SearchActivity.JARGON, true);
 		startSearch(null, false, appData, false);
 		return true;
+		
 	}
 	
 	
