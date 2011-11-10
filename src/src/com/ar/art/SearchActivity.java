@@ -23,7 +23,7 @@ public class SearchActivity  extends Activity {
 	    Intent intent = getIntent();
 	    if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
 	      String query = intent.getStringExtra(SearchManager.QUERY);
-	      T.appvariabls.services.loadSearchResults(query);
+	      ((ArtApplication)getApplication()).getServices().loadSearchResults(query);
 	      
 	      
 	      

@@ -1,6 +1,5 @@
 package tpAndroid.main;
 
-import org.w3c.dom.Element;
 
 public class Address {
 

@@ -1,7 +1,5 @@
 package com.ar.art;
 
-import servidor.Services;
-import tpAndroid.main.App;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,8 +17,6 @@ public class MainActivity extends ArtActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		T.appvariabls.app = new App();
-		T.appvariabls.services = new Services(T.appvariabls.app);
 		setContentView(R.layout.mainview);
 		initialize();
 		sertSearch();
@@ -51,6 +47,8 @@ public class MainActivity extends ArtActivity {
 
 	private void initialize() {
 		categoriesButton = (Button) findViewById(R.id.categories_button);
+		
+		
 		categoriesButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
 				Intent intent = new Intent(MainActivity.this,

@@ -19,35 +19,44 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
         public static final int ic_menu_search=0x7f020002;
         public static final int icon=0x7f020003;
-        public static final int logo=0x7f020004;
-        public static final int lupa=0x7f020005;
-        public static final int main_button=0x7f020006;
+        public static final int iconforsliding=0x7f020004;
+        public static final int logo=0x7f020005;
+        public static final int lupa=0x7f020006;
+        public static final int main_button=0x7f020007;
+        public static final int tray_handle_normal=0x7f020008;
+        public static final int tray_handle_pressed=0x7f020009;
+        public static final int tray_handle_selected=0x7f02000a;
     }
     public static final class id {
-        public static final int View01=0x7f07000e;
-        public static final int categories_button=0x7f07000a;
+        public static final int View01=0x7f070011;
+        public static final int cartListTitle=0x7f070012;
+        public static final int categories_button=0x7f07000d;
         public static final int category_button=0x7f070001;
-        public static final int hot_products_button=0x7f07000c;
-        public static final int imageButton1=0x7f07000f;
-        public static final int imageView1=0x7f070002;
-        public static final int imageView2=0x7f070003;
+        public static final int hot_products_button=0x7f07000f;
+        public static final int image=0x7f070002;
+        public static final int imageView1=0x7f070005;
+        public static final int imageView2=0x7f070006;
         public static final int lupa=0x7f070000;
-        public static final int my_account_button=0x7f07000b;
-        public static final int page_button=0x7f07000d;
-        public static final int textView1=0x7f070004;
-        public static final int textView2=0x7f070005;
-        public static final int textView3=0x7f070006;
-        public static final int textView4=0x7f070007;
-        public static final int textView5=0x7f070008;
-        public static final int textView6=0x7f070009;
+        public static final int my_account_button=0x7f07000e;
+        public static final int nextButton=0x7f070013;
+        public static final int page_button=0x7f070010;
+        public static final int price=0x7f070004;
+        public static final int textView1=0x7f070007;
+        public static final int textView2=0x7f070008;
+        public static final int textView3=0x7f070009;
+        public static final int textView4=0x7f07000a;
+        public static final int textView5=0x7f07000b;
+        public static final int textView6=0x7f07000c;
+        public static final int title=0x7f070003;
     }
     public static final class layout {
         public static final int categoriesview=0x7f030000;
         public static final int category=0x7f030001;
-        public static final int itemdescriptionview=0x7f030002;
-        public static final int mainview=0x7f030003;
-        public static final int myaccountview=0x7f030004;
-        public static final int productsview=0x7f030005;
+        public static final int item_list_slot=0x7f030002;
+        public static final int itemdescriptionview=0x7f030003;
+        public static final int mainview=0x7f030004;
+        public static final int myaccountview=0x7f030005;
+        public static final int productsview=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
@@ -64,6 +73,7 @@ public final class R {
         public static final int my_account=0x7f060007;
         public static final int my_account_main_button=0x7f06000c;
         public static final int no_data=0x7f060011;
+        public static final int no_product=0x7f060013;
         public static final int page_main_button=0x7f06000a;
         public static final int products=0x7f060006;
         public static final int search_hint=0x7f060012;
