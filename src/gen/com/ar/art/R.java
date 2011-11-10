@@ -29,7 +29,6 @@ public final class R {
     }
     public static final class id {
         public static final int View01=0x7f070011;
-        public static final int cartListTitle=0x7f070012;
         public static final int categories_button=0x7f07000d;
         public static final int category_button=0x7f070001;
         public static final int hot_products_button=0x7f07000f;
@@ -38,7 +37,7 @@ public final class R {
         public static final int imageView2=0x7f070006;
         public static final int lupa=0x7f070000;
         public static final int my_account_button=0x7f07000e;
-        public static final int nextButton=0x7f070013;
+        public static final int nextButton=0x7f070012;
         public static final int page_button=0x7f070010;
         public static final int price=0x7f070004;
         public static final int textView1=0x7f070007;
