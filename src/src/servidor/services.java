@@ -115,7 +115,7 @@ public class Services {
 	    return null;
 	  }
 	
-	private void loadSubcategories(final int category_id) {
+	public void loadSubcategories(final int category_id) {
 		
 		new CatalogRequest("GetSubcategoryList", "language_id=" + langid + "&category_id=" + category_id).make(new RequestResponse() {
 			public void handle(String response) {
@@ -196,10 +196,10 @@ public class Services {
 				
 				app.setItems(items);
 				
-				for(int i=0; i<items.size();i++){
+				//for(int i=0; i<items.size();i++){
 					
-					loadInfo(items.get(i).getId(),response);
-				}
+				//loadInfo(items.get(i).getId(),response);
+				//}
 				
 			}
 		
@@ -216,23 +216,15 @@ public class Services {
 	}
 
 
-	private void loadInfo(final int id, String response) {
+	public void loadInfo(Item item) {
 		
-		new CatalogRequest("GetProduct", "product_id=" + id).make(new RequestResponse() {
+		new CatalogRequest("GetProduct", "product_id=" + item.getId()).make(new RequestResponse() {
 			
 			Item item=null;
 			
 			
 			public void handle(String response) {
 				
-				
-				for(int i=0;i<app.getItems().size();i++){
-					
-				      if(id==app.getItems().get(i).getId()){
-				    	  item=app.getItems().get(i);
-				      }
-				}
-		
 				
 				if(item instanceof MovieItem ){
 					parseMovieInfo(response,item);
@@ -368,7 +360,6 @@ public class Services {
 				    }
 			}
 		
-
 	private List<Item> parseItems(String response) {
 		
 		List<Item> ans=new ArrayList<Item>();
@@ -703,7 +694,6 @@ public class Services {
 	}
 		
 	
-
 
 }
 
