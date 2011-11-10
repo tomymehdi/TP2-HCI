@@ -687,13 +687,13 @@ public class Services {
 		String[] categoryFields = { "name" };
 		loadCategories();
 		List<Category> categories = app.getCategories();
-		List<Map<String, String>> transformedTweets = new ArrayList<Map<String, String>>();
+		List<Map<String, String>> transformedCategories = new ArrayList<Map<String, String>>();
 		for (Category c : categories) {
 			HashMap<String, String> map = new HashMap<String, String>();
 			map.put(categoryFields[0], c.getName());
-			transformedTweets.add(map);
+			transformedCategories.add(map);
 		}
-		return transformedTweets;
+		return transformedCategories;
 	}
 
 

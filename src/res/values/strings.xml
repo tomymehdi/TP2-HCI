@@ -19,5 +19,6 @@
     <string name="item_title_example">Libro loco</string>
     <string name="category_example">Libros</string>
     <string name="no_data">No data</string>
+    <string name="no_product">There\'s no product on that filter</string>
         
 </resources>

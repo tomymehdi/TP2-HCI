@@ -27,34 +27,34 @@ public final class R {
         public static final int tray_handle_selected=0x7f020009;
     }
     public static final class id {
-        public static final int View01=0x7f060012;
-        public static final int btn=0x7f060005;
-        public static final int categories_button=0x7f06000e;
-        public static final int category_button=0x7f060006;
-        public static final int content=0x7f060002;
-        public static final int drawer=0x7f060001;
-        public static final int handle=0x7f060003;
-        public static final int hot_products_button=0x7f060010;
-        public static final int imageButton1=0x7f060013;
+        public static final int View01=0x7f060010;
+        public static final int cartListTitle=0x7f060011;
+        public static final int categories_button=0x7f06000c;
+        public static final int category_button=0x7f060001;
+        public static final int hot_products_button=0x7f06000e;
+        public static final int image=0x7f060002;
         public static final int imageView1=0x7f060000;
-        public static final int imageView2=0x7f060007;
-        public static final int my_account_button=0x7f06000f;
-        public static final int page_button=0x7f060011;
-        public static final int textView1=0x7f060008;
-        public static final int textView2=0x7f060009;
-        public static final int textView3=0x7f06000a;
-        public static final int textView4=0x7f06000b;
-        public static final int textView5=0x7f06000c;
-        public static final int textView6=0x7f06000d;
-        public static final int txt=0x7f060004;
+        public static final int imageView2=0x7f060005;
+        public static final int my_account_button=0x7f06000d;
+        public static final int nextButton=0x7f060012;
+        public static final int page_button=0x7f06000f;
+        public static final int price=0x7f060004;
+        public static final int textView1=0x7f060006;
+        public static final int textView2=0x7f060007;
+        public static final int textView3=0x7f060008;
+        public static final int textView4=0x7f060009;
+        public static final int textView5=0x7f06000a;
+        public static final int textView6=0x7f06000b;
+        public static final int title=0x7f060003;
     }
     public static final class layout {
         public static final int categoriesview=0x7f030000;
         public static final int category=0x7f030001;
-        public static final int itemdescriptionview=0x7f030002;
-        public static final int mainview=0x7f030003;
-        public static final int myaccountview=0x7f030004;
-        public static final int productsview=0x7f030005;
+        public static final int item_list_slot=0x7f030002;
+        public static final int itemdescriptionview=0x7f030003;
+        public static final int mainview=0x7f030004;
+        public static final int myaccountview=0x7f030005;
+        public static final int productsview=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
@@ -71,6 +71,7 @@ public final class R {
         public static final int my_account=0x7f050007;
         public static final int my_account_main_button=0x7f05000c;
         public static final int no_data=0x7f050011;
+        public static final int no_product=0x7f050012;
         public static final int page_main_button=0x7f05000a;
         public static final int products=0x7f050006;
         public static final int start_shopping=0x7f05000b;
