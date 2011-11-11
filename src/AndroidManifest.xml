@@ -29,6 +29,11 @@
             android:label="@string/subcategories"
             android:name=".SubcategoriesActivity" >
         </activity>
+        
+        
+            
+            
+            
         <activity
             android:label="@string/my_account"
             android:name=".MyAccountActivity" >
@@ -46,16 +51,25 @@
             android:name=".SearchActivity" >
             <intent-filter>
             <action android:name="android.intent.action.SEARCH" />
-        </intent-filter>
+       
+            </intent-filter>
         <meta-data 
-            android:name="android.app.searchable"
+            android:name="android.app.searchable"            
             android:resource="@xml/searchable"/>
-    		</activity>
+        
+    	</activity>
     		 
    		<activity android:name=".OpenSearchActivity"  >
         <meta-data android:name="android.app.default_searchable"
-                   android:value=".SearchActivity" />
-    		</activity>
+                   android:value=".SearchActivity"  />
+    	</activity>
+    	
+    	<activity  android:name=".SettingsActivity"
+    	           android:label="@string/settings">
+    	</activity>
+   		 
+
+   		    
     </application>
 
 </manifest>

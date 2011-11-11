@@ -11,6 +11,7 @@ import tpAndroid.main.MovieItem;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -49,4 +50,16 @@ public class ProductsActivity extends ListActivity{
 		intent.putExtras(bundle);
 		startActivity(intent);
 	}
+	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event){
+		if(keyCode == KeyEvent.KEYCODE_SEARCH && event.getRepeatCount() == 0){
+			Intent intent = new Intent(ProductsActivity.this,
+					OpenSearchActivity.class);
+			startActivity(intent);			
+			
+			
+		}
+		return true;
+		}
 }

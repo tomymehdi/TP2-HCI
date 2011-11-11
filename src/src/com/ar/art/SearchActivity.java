@@ -1,9 +1,7 @@
 package com.ar.art;
 
-import java.util.ArrayList;
-import java.util.List;
 
-import tpAndroid.main.Item;
+
 
 import android.app.Activity;
 import android.app.SearchManager;
@@ -25,10 +23,16 @@ public class SearchActivity  extends Activity {
 	      String query = intent.getStringExtra(SearchManager.QUERY);
 	      ((ArtApplication)getApplication()).getServices().loadSearchResults(query);
 	      
-	      
-	      
-
 	    }
+	    
+	    
+	    Intent i= new Intent(SearchActivity.this,ProductsActivity.class);
+	    startActivity(i);
+	    
+		
+
+	    
+	    SearchActivity.this.finish();
 	}
 
 }

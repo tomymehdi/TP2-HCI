@@ -429,7 +429,7 @@ public class Services {
 
 				items=parseItems(response);
 								
-				app.setSearch(items);
+				app.setItems(items);
 				
 			}
 
@@ -447,6 +447,7 @@ public class Services {
 				User user=parseUser(response);
 				app.setUser(user);				
 				app.setToken(user.getToken());
+				app.setUsername(user.getUserName());
 				
 			}
 
@@ -504,6 +505,7 @@ public class Services {
 			public void handle(String response) {
 			
 				app.setUser(null);
+				app.setUsername(null);
 				
 			}
 		});
