@@ -11,6 +11,7 @@ public class App {
 	private List<Item> items;
 	private User user;
 	private String token=null;
+	private String username=null;
 
 	public App() {
 		// TODO Auto-generated constructor stub
@@ -77,4 +78,10 @@ public class App {
 			this.token=token2;		
 	}
 
+	public void setUsername(String user2) {
+		this.username=user2;
+	}
+	public String getUsername(){
+		return username;
+	}
 }

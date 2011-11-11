@@ -2,7 +2,6 @@ package com.ar.art;
 
 
 
-import java.util.Calendar;
 
 import android.app.Activity;
 import android.app.SearchManager;

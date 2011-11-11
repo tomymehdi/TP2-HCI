@@ -50,18 +50,19 @@
        
             </intent-filter>
         <meta-data 
-            android:name="android.app.searchable"
-            
+            android:name="android.app.searchable"            
             android:resource="@xml/searchable"/>
         
-    		</activity>
+    	</activity>
     		 
    		<activity android:name=".OpenSearchActivity"  >
         <meta-data android:name="android.app.default_searchable"
-                   android:value=".SearchActivity" 
-                   />
-    		</activity>
-    		
+                   android:value=".SearchActivity"  />
+    	</activity>
+    	
+    	<activity  android:name=".SettingsActivity"
+    	           android:label="@string/settings">
+    	</activity>
    		 
 
    		    
