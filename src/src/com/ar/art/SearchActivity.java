@@ -26,7 +26,7 @@ public class SearchActivity  extends Activity {
 	    }
 	    
 	    
-	    Intent i= new Intent(SearchActivity.this,HotProductsActivity.class);
+	    Intent i= new Intent(SearchActivity.this,ProductsActivity.class);
 	    startActivity(i);
 	    
 		

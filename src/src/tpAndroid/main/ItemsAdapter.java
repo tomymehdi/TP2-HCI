@@ -35,7 +35,7 @@ public class ItemsAdapter extends BaseAdapter {
 
 	@Override
 	public long getItemId(int index) {
-		return index;
+		return getItem(index).getId();
 	}
 
 	@Override
@@ -52,6 +52,17 @@ public class ItemsAdapter extends BaseAdapter {
 
 	public void forceReload() {
 		notifyDataSetChanged();
+	}
+
+	public Item getItemById(long id) {
+		for(int i = 0; i < items.size(); i++){
+			System.out.println("I have " + items.get(i).getId() + " and im looking for " + id);
+			if(items.get(i).getId() == (int)id){
+				return items.get(i);
+			}
+		}
+		return null;
+		//TODO: Lanzar error.
 	}
 
 }

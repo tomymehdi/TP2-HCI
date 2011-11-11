@@ -43,7 +43,7 @@ public class ItemListSlot extends RelativeLayout {
 		Drawable draw = drawable_from_url(item.getImgUrl());
 		this.image.setImageDrawable(draw);
 		this.title.setText(item.getName());
-		this.price.setText(new Double((item.getPrice())).toString());
+		this.price.setText("$" + new Double((item.getPrice())).toString());
 	}
 	
 	private Drawable drawable_from_url(String url){
