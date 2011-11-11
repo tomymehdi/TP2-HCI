@@ -216,17 +216,14 @@ public class Services {
 	}
 
 
-	public void loadInfo(Item item) {
+	public void loadInfo(final Item item) {
 		
 		new CatalogRequest("GetProduct", "product_id=" + item.getId()).make(new RequestResponse() {
-			
-			Item item=null;
-			
 			
 			public void handle(String response) {
 				
 				
-				if(item instanceof MovieItem ){
+				if(item.getCateg_id() == 1 ){
 					parseMovieInfo(response,item);
 				}
 				else{

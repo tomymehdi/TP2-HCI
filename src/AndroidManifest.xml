@@ -35,7 +35,11 @@
         </activity>
         <activity
             android:label="@string/products"
-            android:name=".HotProductsActivity" >
+            android:name=".ProductsActivity" >
+        </activity>
+        <activity
+            android:label="@string/info"
+            android:name=".ItemDescriptionActivity" >
         </activity>
         
         <activity 

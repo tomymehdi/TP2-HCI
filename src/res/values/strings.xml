@@ -24,5 +24,9 @@
 
     <string name="no_product">There\'s no product on that filter</string>
 
+    <string name="info">Info</string>
+
+    <string name="price_tag">Price: $</string>
+
         
 </resources>

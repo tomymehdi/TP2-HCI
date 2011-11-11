@@ -59,8 +59,9 @@ public class MainActivity extends ArtActivity {
 		hotProductsButton = (Button) findViewById(R.id.hot_products_button);
 		hotProductsButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View arg0) {
+				((ArtApplication)getApplication()).getServices().loadItems(1, 1);
 				Intent intent = new Intent(MainActivity.this,
-						HotProductsActivity.class);
+						ProductsActivity.class);
 				startActivity(intent);
 			}
 		});

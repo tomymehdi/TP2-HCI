@@ -76,5 +76,25 @@ public class App {
 	public void setToken(String token2) {
 			this.token=token2;		
 	}
+	
+	public Item getItemById(int id){
+		for(Item item : items){
+			if(item.getId() == id){
+				return item;
+			}
+		}
+		return null;
+		//TODO:Lanzar excepcion.
+	}
+
+	public Category getCategory(int id) {
+//		List<Category> cats = getCategories();
+		for(Category cat : getCategories()){
+			if(cat.getId() == id){
+				return cat;
+			}
+		}
+		return null;
+	}
 
 }
