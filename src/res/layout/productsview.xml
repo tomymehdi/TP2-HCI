@@ -6,116 +6,39 @@
     android:orientation="vertical" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/lupa"
         android:layout_width="50px"
         android:layout_height="50px"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/lupa" />
+        android:src="@drawable/ic_menu_search" />
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <ListView
+        android:id="@id/android:list"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginTop="70px" >
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextButton"
+        android:layout_below="@id/lupa"
+        android:layout_marginTop="5px"
+        android:cacheColorHint="#00000000"
+        android:textColor="@color/textColor" />
 
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="155px"
-            android:layout_marginTop="10px" >
+    <ImageView
+        android:id="@+id/setting_icon"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5px"
+        android:layout_toLeftOf="@+id/lupa"
+        android:src="@drawable/setting_icon" />
 
-            <View
-                android:id="@+id/View01"
-                android:layout_width="270dip"
-                android:layout_height="3px"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="20px"
-                android:background="#FFFFFF" />
-
-            <View
-                android:id="@+id/View01"
-                android:layout_width="270dip"
-                android:layout_height="3px"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20px"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/imageButton1"
-                android:layout_width="80px"
-                android:layout_height="125px"
-                android:layout_alignLeft="@+id/View01"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10px"
-                android:src="@drawable/lupa" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageButton1"
-                android:layout_alignRight="@+id/View01"
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/textColor" />
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageButton1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="17dp"
-                android:text="Medium Text"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/textColor" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="155px"
-            android:layout_marginTop="165px" >
-
-            <View
-                android:id="@+id/View01"
-                android:layout_width="270dip"
-                android:layout_height="3px"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20px"
-                android:background="#FFFFFF" />
-
-            <ImageButton
-                android:id="@+id/imageButton1"
-                android:layout_width="80px"
-                android:layout_height="125px"
-                android:layout_alignLeft="@+id/View01"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10px"
-                android:src="@drawable/lupa" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageButton1"
-                android:layout_alignRight="@+id/View01"
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/textColor" />
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageButton1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="17dp"
-                android:text="Medium Text"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/textColor" />
-        </RelativeLayout>
-    </RelativeLayout>
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lupa"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/no_product"
+        android:textColor="@color/textColor" />
 
 </RelativeLayout>

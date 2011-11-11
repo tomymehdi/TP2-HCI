@@ -29,6 +29,11 @@
             android:label="@string/subcategories"
             android:name=".SubcategoriesActivity" >
         </activity>
+        
+        
+            
+            
+            
         <activity
             android:label="@string/my_account"
             android:name=".MyAccountActivity" >
@@ -37,6 +42,29 @@
             android:label="@string/products"
             android:name=".HotProductsActivity" >
         </activity>
+        
+        <activity 
+            android:name=".SearchActivity" >
+            <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+       
+            </intent-filter>
+        <meta-data 
+            android:name="android.app.searchable"
+            
+            android:resource="@xml/searchable"/>
+        
+    		</activity>
+    		 
+   		<activity android:name=".OpenSearchActivity"  >
+        <meta-data android:name="android.app.default_searchable"
+                   android:value=".SearchActivity" 
+                   />
+    		</activity>
+    		
+   		 
+
+   		    
     </application>
 
 </manifest>

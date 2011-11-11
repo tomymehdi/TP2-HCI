@@ -1,7 +1,9 @@
 package com.ar.art;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 
 public class MyAccountActivity extends Activity{
 	
@@ -16,5 +18,15 @@ public class MyAccountActivity extends Activity{
 		// TODO Auto-generated method stub
 		
 	}
-
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event){
+		if(keyCode == KeyEvent.KEYCODE_SEARCH && event.getRepeatCount() == 0){
+			Intent intent = new Intent(MyAccountActivity.this,
+					OpenSearchActivity.class);
+			startActivity(intent);			
+			
+			
+		}
+		return true;
+		}
 }
