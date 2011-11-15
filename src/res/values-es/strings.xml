@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ART Mobile</string>
+    <string name="loading">Por favor aguarde mientras cargamos la app...</string>
+    <string name="loaded">Applicacion cargada</string>
+    
+    <string name="categories">Categorias</string>
+    <string name="subcategories">Subcategorias</string>
+    <string name="products">Productos</string>
+    <string name="my_account">Mis ordenes</string>
+    <string name="list_of_products">Lista de productos</string>
+    <string name="categories_main_button">Categorias</string>
+    <string name="my_account_main_button">Mis ordenes</string>
+    <string name="myAccount_arrivingOrders">Ordenes en camino</string>
+    <string name="category_example">Libros</string>
+    <string name="no_data">No hay datos</string>
+
+    <string name="search_hint">Buscar productos</string>
+
+    <string name="no_product">No hay productos para esa busqueda</string>
+    <string name="settings">Ajustes</string>
+    <string name="dolar">U$D</string>
+    <string name="peso">AR$</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contrasena</string>
+    <string name="gotoweb">Ir a la página web</string>
+    <string name="login">Loguearse</string>
+    <string name="logout">Des Loguearse</string>
+    <string name="currency">Moneda</string>
+        
+    <string name="language">Idioma</string>
+    <string name="succes_login">se ha logueado correctamente</string>
+    <string name="fail_login">nombre de usuario o contraseña inválidos</string>
+    <string name="fail_logout">no se ha deslogueado</string>
+           
+    <string name="succes_logout">se ha des logueado correctamente</string>
+    <string name="book">LIBROS</string>
+    <string name="apply">Aplicar</string>    
+    <string name="creation_date">Creado</string>
+    <string name="confirmation_date">Confirmado</string>
+    <string name="destination">Direccion</string>
+    <string name="no_address">No hay direccion</string>
+    <string name="no_city">No hay ciudad</string>
+    <string name="no_orders">No hay ordenes confirmadas</string>
+        
+
+
+    <string name="info">Informacion</string>
+
+    <string name="price_tag">Precio: AR$</string>
+
+
+    <string name="my_orders">Mis Ordenes</string>
+
+        
+</resources>

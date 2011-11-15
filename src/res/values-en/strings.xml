@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ART Mobile</string>
+    <string name="loading">Please wait while we load this app...</string>
+    <string name="loaded">Application Loaded</string>
+    <string name="cartButton">Cart</string>
+    <string name="categories">Categories</string>
+    <string name="subcategories">Subcategories</string>
+    <string name="products">Products</string>
+    <string name="my_account">My orders</string>
+    <string name="list_of_products">List of Products</string>
+    <string name="categories_main_button">Categories</string>
+    <string name="page_main_button">Art page</string>
+    <string name="start_shopping">Start Shopping!</string>
+    <string name="my_account_main_button">My orders</string>
+    <string name="hot_products_main_button">Hot products</string>
+    <string name="myAccount_arrivingOrders">Arriving orders</string>
+    <string name="item_title_example">Libro loco</string>
+    <string name="category_example">Libros</string>
+    <string name="no_data">No data</string>
+    <string name="gotoweb">Go to web page</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="currency">Currency</string>
+    <string name="language">Languaje</string>
+ 	 <string name="succes_login">you have loged in correctly</string>
+    <string name="succes_logout">you have loged out correctly</string>
+    <string name="fail_login">invalid username or password</string>
+    <string name="fail_logout">you have not been loged out</string>
+    
+    <string name="book">BOOKS</string>
+    <string name="apply">Apply</string>    
+        
+        
+        
+    <string name="search_hint">Search products</string>
+
+    <string name="no_product">There\'s no product on that filter</string>
+    <string name="settings">Settings</string>
+    <string name="dolar">U$D</string>
+    <string name="peso">AR$</string>
+    <string name="username">User name</string>
+    <string name="password">Password</string>
+
+    <string name="info">Info</string>
+    <string name="price_tag">Price: $</string>
+    <string name="my_orders">My Orders</string>
+
+    <string name="creation_date">Created</string>
+    <string name="confirmation_date">Confirmed</string>
+    <string name="destination">Address</string>
+    <string name="no_orders">There is no confirmed order by your account.</string>
+    <string name="no_address">No address</string>
+    <string name="no_city">No city</string>
+            
+        
+
+        
+</resources>

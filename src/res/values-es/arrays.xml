@@ -1,0 +1,10 @@
+<resources>
+        <string-array name="monedas">
+           <item >"AR$"</item> 
+          <item >"U$D"</item>
+        </string-array>       
+         <string-array name="languages">
+           <item >"Espanol"</item>
+           <item >"Ingles"</item>
+        </string-array>       
+ </resources>
